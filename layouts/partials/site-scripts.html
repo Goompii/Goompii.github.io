@@ -1,0 +1,5 @@
+{{ if .Site.Params.custom_js }}
+  {{ range .Site.Params.custom_js }}
+    <script src="{{ . }}"></script>
+  {{ end }}
+{{ end }}
