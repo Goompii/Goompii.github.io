@@ -7,6 +7,7 @@ date: 2025-12-16
 Description of your program here.
 
 ---
+---
 title: "Couples Budget Tracker"
 description: "A Python application for managing shared finances"
 date: 2025-12-16
@@ -14,7 +15,7 @@ date: 2025-12-16
 
 ## Overview
 
-A full-stack web application built with Python (Flask) and SQLite for couples to manage their shared budget together.
+A full-stack web application built with Python (Flask/Streamlit) and SQLite for couples to manage their shared budget together.
 
 ## Features
 
@@ -24,27 +25,21 @@ A full-stack web application built with Python (Flask) and SQLite for couples to
 - **Real-time Dashboard** - View spending overview and financial health
 - **Expense Categories** - Organize expenses (groceries, rent, entertainment, etc.)
 - **Reports** - Generate monthly spending reports
+- **Recurring Expenses** - Set up automatic recurring transactions
 - **Data Sync** - Both users see updated data in real-time
 
 ## Tech Stack
 
-- **Backend**: Python 3.x with Flask
+- **Backend**: Python 3.x with Streamlit
 - **Database**: SQLite
-- **Frontend**: HTML, CSS, JavaScript
-- **Authentication**: Flask-Login with password hashing
+- **Authentication**: Custom authentication system
+- **Security**: Password hashing and data encryption
 
-## How It Works
+## Status
 
-1. Both partners create accounts and link their budgets
-2. Either partner can add expenses throughout the month
-3. Dashboard shows current spending vs budget limits
-4. Monthly reports help with financial planning
-5. Set alerts when approaching budget limits
+🚀 **Currently In Development** - Core functionality being built
 
-## Repository
+## Get the Code
 
 [View on GitHub](https://github.com/Goompii/couples-budget)
 
----
-
-**Status**: In Development
