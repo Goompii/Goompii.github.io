@@ -1,0 +1,8 @@
+baseURL = "https://Goompii.github.io/"
+languageCode = "en-us"
+title = "Jean-Paul van Staden"
+theme = "ananke"
+
+[params]
+  description = "Games and Programs"
+  author = "Jean-Paul van Staden"
