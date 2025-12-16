@@ -6,3 +6,13 @@ theme = "ananke"
 [params]
   description = "Games and Programs"
   author = "Jean-Paul van Staden"
+
+[[menu.main]]
+  name = "Games"
+  url = "/games/"
+  weight = 1
+
+[[menu.main]]
+  name = "Programs"
+  url = "/programs/"
+  weight = 2
