@@ -26,6 +26,7 @@
         <div class="container nav-container">
             <a href="#hero" class="logo">JP<span class="accent">.</span></a>
             <ul class="nav-menu">
+                <li><a href="#how-i-work" class="nav-link">How I work</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#experience" class="nav-link">Experience</a></li>
@@ -47,10 +48,11 @@
             <h1>Jean-Paul van Staden</h1>
             <p class="hero-subtitle">Junior Software Developer</p>
             <p class="hero-description">
-                Self-taught developer with ten years spent inside business systems — procurement, stock control,
-                and reporting. I got tired of watching broken processes waste people's time, so I started building
-                the software that fixed them. Now I build full-stack applications with <strong>Python</strong>,
-                <strong>React</strong>, <strong>AWS</strong> and <strong>PostgreSQL</strong>.
+                Ten years inside business systems — procurement, stock control, and reporting, with
+                <strong>SQL</strong> and <strong>Power BI</strong> in my hands every day. I got tired of watching
+                broken processes waste people's time, so I started building the software that fixed them.
+                <strong>Five applications shipped end to end</strong>, and a deliberate, unglamorous effort underway
+                to understand every layer of them.
             </p>
             <div class="hero-buttons">
                 <a href="#projects" class="btn btn-primary">See what I've built</a>
@@ -100,13 +102,43 @@
         </div>
     </section>
 
+    <!-- HOW I WORK -->
+    <section id="how-i-work" class="how-i-work">
+        <div class="container">
+            <h2 class="section-title">How I work</h2>
+            <div class="honesty-card">
+                <p class="honesty-lead">
+                    I build with AI-assisted tooling, and I'd rather say so plainly than have you wonder.
+                </p>
+                <p>
+                    In practice that means I scope the problem, decide what to build and why, direct the
+                    implementation, test it, deploy it, and fix it when it breaks. Every application below is
+                    something I took from an idea to software that real people use. That part I'll defend all day.
+                </p>
+                <p>
+                    What it doesn't mean is that I understand every layer as deeply as I intend to. So I'm working
+                    back through my own codebases — the authorization model in OrderFlow, the row-level security in
+                    Xelvo, the database abstraction in Couples Budget — until I can explain and defend each decision
+                    rather than just point at the result.
+                </p>
+                <p class="honesty-close">
+                    I'd rather tell you that up front than have you discover it in an interview. If you're looking
+                    for someone who ships, tells you the truth about what they know, and closes their own gaps —
+                    that's what you'd be hiring.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
     <!-- PROJECTS -->
     <section id="projects" class="projects">
         <div class="container">
             <h2 class="section-title">Selected projects</h2>
             <p class="section-subtitle">
-                Each of these I took from an idea to working software. Most repositories are private, but I'm always
-                happy to walk through the code, the architecture, or the mistakes I made along the way.
+                Each of these I took from an idea to working software — scoped, built, tested and deployed, with
+                AI-assisted tooling. Most repositories are private, but I'm happy to walk through what any of them
+                does, the decisions behind it, and the parts I'm still learning.
             </p>
 
             <div class="projects-grid">
@@ -290,76 +322,54 @@
     <section id="skills" class="skills">
         <div class="container">
             <h2 class="section-title">Technical skills</h2>
-            <p class="section-subtitle">Everything listed here I have used to build something that actually runs.</p>
+            <p class="section-subtitle">
+                Split by how well I actually know each thing, because a flat list would tell you nothing.
+            </p>
             <div class="skills-grid">
 
-                <div class="skill-category">
-                    <h3>Languages</h3>
+                <div class="skill-category tier-strong">
+                    <h3>Used professionally, daily <span class="tier-note">10 years</span></h3>
+                    <p class="tier-desc">Paid work. Ask me anything here.</p>
+                    <ul class="skill-list">
+                        <li><span class="skill-badge">SQL / T-SQL</span></li>
+                        <li><span class="skill-badge">Power BI</span></li>
+                        <li><span class="skill-badge">DAX</span></li>
+                        <li><span class="skill-badge">Power Query</span></li>
+                        <li><span class="skill-badge">Advanced Excel</span></li>
+                        <li><span class="skill-badge">SAP</span></li>
+                        <li><span class="skill-badge">Data modeling</span></li>
+                        <li><span class="skill-badge">Process automation</span></li>
+                    </ul>
+                </div>
+
+                <div class="skill-category tier-shipped">
+                    <h3>Shipped projects with <span class="tier-note">AI-assisted</span></h3>
+                    <p class="tier-desc">
+                        I've built and deployed working software on all of these, and I can explain what each
+                        does and why I chose it — while I'm still deepening my grasp of the internals.
+                    </p>
                     <ul class="skill-list">
                         <li><span class="skill-badge">Python</span></li>
                         <li><span class="skill-badge">JavaScript</span></li>
-                        <li><span class="skill-badge">TypeScript</span></li>
-                        <li><span class="skill-badge">SQL / T-SQL</span></li>
-                        <li><span class="skill-badge">GDScript</span></li>
+                        <li><span class="skill-badge">React</span></li>
+                        <li><span class="skill-badge">PostgreSQL</span></li>
+                        <li><span class="skill-badge">Supabase</span></li>
+                        <li><span class="skill-badge">AWS (Lambda, DynamoDB, CDK)</span></li>
+                        <li><span class="skill-badge">Godot / GDScript</span></li>
+                        <li><span class="skill-badge">Git &amp; GitHub</span></li>
                         <li><span class="skill-badge">HTML &amp; CSS</span></li>
                     </ul>
                 </div>
 
-                <div class="skill-category">
-                    <h3>Cloud &amp; Backend</h3>
+                <div class="skill-category tier-learning">
+                    <h3>Actively learning <span class="tier-note">now</span></h3>
+                    <p class="tier-desc">Where my time goes at the moment.</p>
                     <ul class="skill-list">
-                        <li><span class="skill-badge">AWS Lambda</span></li>
-                        <li><span class="skill-badge">DynamoDB</span></li>
-                        <li><span class="skill-badge">API Gateway</span></li>
-                        <li><span class="skill-badge">Cognito</span></li>
-                        <li><span class="skill-badge">AWS CDK</span></li>
-                        <li><span class="skill-badge">Supabase</span></li>
-                        <li><span class="skill-badge">PostgreSQL</span></li>
-                        <li><span class="skill-badge">REST APIs</span></li>
-                    </ul>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Frontend</h3>
-                    <ul class="skill-list">
-                        <li><span class="skill-badge">React</span></li>
-                        <li><span class="skill-badge">Tailwind CSS</span></li>
-                        <li><span class="skill-badge">Vite</span></li>
-                        <li><span class="skill-badge">Progressive Web Apps</span></li>
-                        <li><span class="skill-badge">Responsive design</span></li>
-                    </ul>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Data &amp; Reporting</h3>
-                    <ul class="skill-list">
-                        <li><span class="skill-badge">Power BI</span></li>
-                        <li><span class="skill-badge">DAX</span></li>
-                        <li><span class="skill-badge">Power Query</span></li>
-                        <li><span class="skill-badge">pandas</span></li>
-                        <li><span class="skill-badge">Advanced Excel</span></li>
-                        <li><span class="skill-badge">SAP</span></li>
-                    </ul>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Practices &amp; Tooling</h3>
-                    <ul class="skill-list">
-                        <li><span class="skill-badge">Git &amp; GitHub</span></li>
-                        <li><span class="skill-badge">GitHub Actions (CI/CD)</span></li>
-                        <li><span class="skill-badge">AI-assisted development</span></li>
-                        <li><span class="skill-badge">Automated testing</span></li>
-                        <li><span class="skill-badge">Infrastructure as code</span></li>
-                        <li><span class="skill-badge">Database design</span></li>
-                    </ul>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Currently learning</h3>
-                    <ul class="skill-list">
-                        <li><span class="skill-badge learning">Automated testing at depth</span></li>
-                        <li><span class="skill-badge learning">TypeScript across the stack</span></li>
-                        <li><span class="skill-badge learning">System design</span></li>
+                        <li><span class="skill-badge learning">Python fundamentals, in depth</span></li>
+                        <li><span class="skill-badge learning">How my own codebases work</span></li>
+                        <li><span class="skill-badge learning">Writing tests myself</span></li>
+                        <li><span class="skill-badge learning">Data structures &amp; algorithms</span></li>
+                        <li><span class="skill-badge learning">JavaScript &amp; the DOM</span></li>
                     </ul>
                 </div>
 
@@ -422,8 +432,9 @@
                         <li>National Senior Certificate <span class="muted">(2012)</span><br>
                             <span class="muted">Rustenburg High School, South Africa</span></li>
                     </ul>
-                    <p class="cred-note">Everything I know about software, I taught myself — through documentation,
-                       courses, and shipping projects end to end.</p>
+                    <p class="cred-note">No computer science degree. Everything I know about software I taught
+                       myself — through documentation, courses, and shipping projects end to end. I'm still
+                       teaching myself, and I expect that to be true for a long time.</p>
                 </div>
             </div>
         </div>
