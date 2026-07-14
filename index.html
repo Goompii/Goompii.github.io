@@ -3,206 +3,363 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional developer portfolio - Python, Web Development, Game Development">
-    <title>Jean-Paul van Staden - Developer Portfolio</title>
+    <title>Jean-Paul van Staden — Junior Software Developer</title>
+    <meta name="description" content="Junior software developer in Ann Arbor, Michigan. Python, JavaScript, React, AWS and SQL. Self-taught, with 10 years in business systems and process automation.">
+    <meta name="author" content="Jean-Paul van Staden">
+
+    <!-- Open Graph / social preview -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Jean-Paul van Staden — Junior Software Developer">
+    <meta property="og:description" content="Self-taught developer in Ann Arbor, MI. I build full-stack apps with Python, React, AWS and PostgreSQL.">
+    <meta property="og:url" content="https://goompii.github.io/">
+    <meta name="twitter:card" content="summary">
+
+    <link rel="canonical" href="https://goompii.github.io/">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#128187;</text></svg>">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
+    <a href="#main" class="skip-link">Skip to content</a>
+
     <!-- NAVIGATION -->
     <nav class="navbar">
         <div class="container nav-container">
-            <div class="logo">
-                <h1>Jean-Paul van Staden</h1>
-            </div>
+            <a href="#hero" class="logo">JP<span class="accent">.</span></a>
             <ul class="nav-menu">
-                <li><a href="#hero" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="assets/files/Jean-Paul-van-Staden-Resume.pdf" class="nav-link nav-cta" download>Résumé</a></li>
             </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </nav>
 
-    <!-- HERO SECTION -->
+    <main id="main">
+
+    <!-- HERO -->
     <section id="hero" class="hero">
         <div class="container hero-content">
-            <div class="hero-text">
-                <h2>Hi, I'm <span class="accent">Jean-Paul van Staden</span></h2>
-                <p class="hero-subtitle">Full-Stack Developer | Problem Solver | Lifelong Learner</p>
-                <p class="hero-description">
-                    I build elegant solutions to complex problems using Python, web technologies, and creative problem-solving. Specializing in desktop applications, web development, and game design.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                </div>
+            <p class="hero-eyebrow">Ann Arbor, Michigan &nbsp;·&nbsp; Open to junior developer roles</p>
+            <h1>Jean-Paul van Staden</h1>
+            <p class="hero-subtitle">Junior Software Developer</p>
+            <p class="hero-description">
+                Self-taught developer with ten years spent inside business systems — procurement, stock control,
+                and reporting. I got tired of watching broken processes waste people's time, so I started building
+                the software that fixed them. Now I build full-stack applications with <strong>Python</strong>,
+                <strong>React</strong>, <strong>AWS</strong> and <strong>PostgreSQL</strong>.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">See what I've built</a>
+                <a href="assets/files/Jean-Paul-van-Staden-Resume.pdf" class="btn btn-secondary" download>Download résumé</a>
             </div>
+            <p class="hero-note">
+                <span class="check">✓</span> Authorized to work in the United States — <strong>no visa sponsorship required</strong>
+            </p>
         </div>
     </section>
 
-    <!-- ABOUT SECTION -->
+    <!-- ABOUT -->
     <section id="about" class="about">
         <div class="container">
-            <h3 class="section-title">About Me</h3>
+            <h2 class="section-title">About me</h2>
             <div class="about-content">
                 <div class="about-text">
                     <p>
-                        I'm a developer with a passion for building tools that solve real-world problems. 
-                        My background in administration and project management gives me a unique perspective 
-                        on user needs and business requirements.
+                        I didn't come to software through a computer science degree. I came to it through ten years
+                        of working <em>next to</em> software that didn't do what people needed — as an IT stock
+                        controller, in IT procurement, and most recently as a procurement buyer.
                     </p>
                     <p>
-                        Whether I'm developing desktop applications, building web platforms, or exploring game development,
-                        I approach every project with the same commitment to quality and user experience.
+                        Along the way I learned SQL, Power BI and Python because the reporting I needed didn't exist.
+                        Then I started building applications instead of just queries. The project I'm proudest of is a
+                        business-process ticketing system I took from idea to working software — scoping the
+                        requirements with the people who'd actually use it, then building it out on AWS: the
+                        infrastructure, the API, the permission model, the tests and the deployment pipeline.
                     </p>
                     <p>
-                        When I'm not coding, you'll find me playing video games (Cyberpunk enthusiast), learning new frameworks,
-                        or helping others in the developer community.
+                        That background is the thing I'd bring to a team. I've been the frustrated user on the other
+                        side of bad software, so I ask what a feature is <em>for</em> before I ask how to build it.
+                        I'm looking for a junior role where I can learn from people more experienced than me and
+                        write code that real users depend on.
                     </p>
                 </div>
-                <div class="about-stats">
-                    <div class="stat">
-                        <h4>3+</h4>
-                        <p>Years Coding</p>
-                    </div>
-                    <div class="stat">
-                        <h4>10+</h4>
-                        <p>Projects Built</p>
-                    </div>
-                    <div class="stat">
-                        <h4>5+</h4>
-                        <p>Technologies</p>
-                    </div>
-                </div>
+                <aside class="about-facts">
+                    <h3>At a glance</h3>
+                    <dl>
+                        <div><dt>Based in</dt><dd>Ann Arbor, Michigan</dd></div>
+                        <div><dt>Work authorization</dt><dd>Authorized to work in the U.S.<br><span class="muted">No sponsorship needed</span></dd></div>
+                        <div><dt>Certified</dt><dd>Microsoft Azure Fundamentals<br>Azure Data Fundamentals</dd></div>
+                        <div><dt>Languages</dt><dd>English (C1) · Afrikaans (native)</dd></div>
+                    </dl>
+                </aside>
             </div>
         </div>
     </section>
 
-    <!-- PROJECTS SECTION -->
+    <!-- PROJECTS -->
     <section id="projects" class="projects">
         <div class="container">
-            <h3 class="section-title">Featured Projects</h3>
+            <h2 class="section-title">Selected projects</h2>
+            <p class="section-subtitle">
+                Each of these I took from an idea to working software. Most repositories are private, but I'm always
+                happy to walk through the code, the architecture, or the mistakes I made along the way.
+            </p>
+
             <div class="projects-grid">
-                
-                <!-- PROJECT CARD 1 -->
-                <div class="project-card">
-                    <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                        <span class="project-placeholder">💰</span>
+
+                <!-- ORDERFLOW -->
+                <article class="project-card featured">
+                    <div class="project-header">
+                        <span class="project-badge">Flagship project</span>
+                        <h3>OrderFlow — Business Process &amp; Ticketing System</h3>
+                        <p class="project-tagline">A production-shaped serverless application on AWS.</p>
                     </div>
                     <div class="project-content">
-                        <h4>Couples Budgeting Application</h4>
                         <p class="project-description">
-                            A desktop application for couples to manage shared finances, track expenses, 
-                            and visualize spending patterns with real-time synchronization.
+                            A ticketing and workflow system for a warehouse and delivery operation. Tickets move
+                            through five distinct roles — creator, stock controller, driver, buyer and admin — with
+                            drivers submitting proof-of-delivery photos from the field. Every action is written to an
+                            audit trail.
+                        </p>
+                        <h4 class="project-subhead">What makes it interesting</h4>
+                        <ul class="project-points">
+                            <li><strong>Infrastructure as code.</strong> The whole AWS stack is defined in TypeScript with AWS CDK — nothing was clicked together by hand, and dev and production are the same definition with a different flag.</li>
+                            <li><strong>The database was designed around its access patterns.</strong> DynamoDB single-table design with four secondary indexes, chosen up front from how the app actually queries — not bolted on afterwards.</li>
+                            <li><strong>Real authorization.</strong> A Cognito-authenticated API with a shared permissions layer that resolves a user's role from three possible sources and fails closed.</li>
+                            <li><strong>Tested and continuously integrated.</strong> 54 automated tests covering permissions and the ticket workflow, run on every push by GitHub Actions alongside a type check and a full infrastructure build.</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="tag">AWS Lambda</span><span class="tag">DynamoDB</span><span class="tag">API Gateway</span>
+                            <span class="tag">Cognito</span><span class="tag">AWS CDK</span><span class="tag">Python</span>
+                            <span class="tag">TypeScript</span><span class="tag">CI/CD</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="project-meta">~14,000 lines · 15 Lambda functions · 54 tests</span>
+                            <span class="project-private" title="Happy to walk through the code on request">🔒 Private repo — walkthrough on request</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- XELVO -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3>Xelvo — Real-Time Private Messenger</h3>
+                        <p class="project-tagline">One codebase, shipped as a web app and an Android app.</p>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-description">
+                            A one-to-one messaging app. Sign in by phone number, add a contact by QR code or invite
+                            link, then chat in real time — with typing indicators, read receipts, reactions, replies,
+                            editing, unsend, media and location sharing.
+                        </p>
+                        <h4 class="project-subhead">What makes it interesting</h4>
+                        <ul class="project-points">
+                            <li><strong>Security is enforced by the database, not the app.</strong> 54 row-level-security policies in PostgreSQL make it structurally impossible to read a conversation you aren't part of — even if the frontend has a bug.</li>
+                            <li><strong>Data integrity designed in.</strong> Database constraints guarantee a conversation between two people can only ever exist once, no matter who starts it.</li>
+                            <li><strong>Web and native from one codebase.</strong> Ships as an installable progressive web app and as a native Android build, with push notifications on both.</li>
+                            <li><strong>Honest about its limits.</strong> It isn't end-to-end encrypted, and the privacy screen says so in plain language rather than implying a guarantee it can't make.</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="tag">React</span><span class="tag">Supabase</span><span class="tag">PostgreSQL</span>
+                            <span class="tag">Realtime</span><span class="tag">PWA</span><span class="tag">Capacitor</span>
+                            <span class="tag">Tailwind</span><span class="tag">Vite</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="project-meta">~11,800 lines · deployed on Cloudflare Pages</span>
+                            <span class="project-private">🔒 Private repo — walkthrough on request</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- SNAKE WORLD -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3>Snake World — Competitive Arcade Game</h3>
+                        <p class="project-tagline">Global leaderboards, and a server that assumes players will cheat.</p>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-description">
+                            A neon take on Snake with 40 level combinations, monthly competitive seasons, unique
+                            gamertags, daily challenges and worldwide leaderboards. Built in Godot and distributed as
+                            a Windows executable.
+                        </p>
+                        <h4 class="project-subhead">What makes it interesting</h4>
+                        <ul class="project-points">
+                            <li><strong>The leaderboard is server-authoritative.</strong> The game client cannot write to the score table at all — submissions go through a stored procedure that validates them, so a modified client has nothing to exploit.</li>
+                            <li><strong>Scores are checked for plausibility.</strong> Each level has a computed maximum realistic score based on its own difficulty; anything beyond it is rejected rather than ranked.</li>
+                            <li><strong>Country and season come from the server</strong>, never from the client, so neither can be faked. Rate limiting is applied per device and per IP, and IP addresses are stored only as hashes.</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="tag">Godot 4</span><span class="tag">GDScript</span><span class="tag">PostgreSQL</span>
+                            <span class="tag">Supabase</span><span class="tag">Anti-cheat</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="project-meta">~5,700 lines · Windows build available</span>
+                            <span class="project-private">🔒 Private repo — walkthrough on request</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- COUPLES BUDGET -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3>Couples Budget — Shared Finance Tracker</h3>
+                        <p class="project-tagline">Two people, one budget, and a database layer I'm quietly proud of.</p>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-description">
+                            A web app for two partners to manage shared money: paired accounts, income and expense
+                            tracking, category budgets with budget-versus-actual reporting, recurring subscriptions
+                            that post themselves when due, and export to Excel or PDF.
+                        </p>
+                        <h4 class="project-subhead">What makes it interesting</h4>
+                        <ul class="project-points">
+                            <li><strong>It runs on two different databases from the same code.</strong> SQLite on a laptop, PostgreSQL in the cloud — a thin connection layer translates the query syntax, so no application code knows or cares which one it's talking to.</li>
+                            <li><strong>Credentials handled properly.</strong> Passwords are hashed with bcrypt and salted per user, and every query is parameterized, so SQL injection isn't possible.</li>
+                            <li><strong>Sessions time out</strong> after 30 minutes idle, and every administrative action is written to an audit log.</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="tag">Python</span><span class="tag">Streamlit</span><span class="tag">PostgreSQL</span>
+                            <span class="tag">SQLite</span><span class="tag">pandas</span><span class="tag">Plotly</span><span class="tag">bcrypt</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="project-meta">~2,900 lines · 8-table schema</span>
+                            <span class="project-private">🔒 Private repo — walkthrough on request</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- DEEPCLAIM -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3>Deepclaim — Deep-Sea Mining Game</h3>
+                        <p class="project-tagline">No art files, no sound files. All of it is code.</p>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-description">
+                            Drill down through a destructible seabed, fill a limited cargo hold, and surface to sell
+                            and upgrade before your oxygen runs out. Claiming a world's core wipes your run and pays
+                            out a permanent currency — twelve seas, thirty-six ores, and a long-term progression loop.
+                        </p>
+                        <h4 class="project-subhead">What makes it interesting</h4>
+                        <ul class="project-points">
+                            <li><strong>Every tile, sprite and sound is generated in code.</strong> The game ships with zero image or audio assets — all of it is produced procedurally at runtime.</li>
+                            <li><strong>Saves survive updates.</strong> The save file is versioned and merged onto current defaults when loaded, so a save written by an older build still works after new features land — and a corrupted file falls back to a fresh start instead of crashing.</li>
+                            <li><strong>It has a real test suite.</strong> 172 assertions that launch the actual game and drive it headlessly, catching what tests on isolated functions would miss.</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="tag">Godot 4</span><span class="tag">GDScript</span>
+                            <span class="tag">Procedural generation</span><span class="tag">Automated testing</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="project-meta">~5,900 lines · 172 test assertions</span>
+                            <span class="project-private">🔒 Private repo — walkthrough on request</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- AUTO CLICKER -->
+                <article class="project-card small">
+                    <div class="project-header">
+                        <h3>Adaptive Auto-Clicker</h3>
+                        <p class="project-tagline">A small utility — and the one repo you can read right now.</p>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-description">
+                            A configurable auto-clicker that adapts its timing to the target application instead of
+                            firing on a fixed interval.
                         </p>
                         <div class="project-tags">
                             <span class="tag">Python</span>
-                            <span class="tag">SQLite</span>
-                            <span class="tag">tkinter</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/Goompii" target="_blank" class="project-link">View Code →</a>
+                            <a href="https://github.com/Goompii/Auto-Clicker" target="_blank" rel="noopener noreferrer" class="project-link">View the code →</a>
                         </div>
                     </div>
-                </div>
-
-                <!-- PROJECT CARD 2 -->
-                <div class="project-card">
-                    <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
-                        <span class="project-placeholder">🎮</span>
-                    </div>
-                    <div class="project-content">
-                        <h4>Interactive Game Project</h4>
-                        <p class="project-description">
-                            A fun, interactive game project exploring game development concepts,
-                            mechanics, and user engagement with modern frameworks.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">Pygame</span>
-                            <span class="tag">Game Dev</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/Goompii" target="_blank" class="project-link">View Code →</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- PROJECT CARD 3 -->
-                <div class="project-card">
-                    <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
-                        <span class="project-placeholder">🌐</span>
-                    </div>
-                    <div class="project-content">
-                        <h4>Web Application Platform</h4>
-                        <p class="project-description">
-                            A modern web application demonstrating full-stack development skills,
-                            from backend API design to responsive, accessible frontend interfaces.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Flask</span>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">Responsive</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/Goompii" target="_blank" class="project-link">View Code →</a>
-                        </div>
-                    </div>
-                </div>
+                </article>
 
             </div>
         </div>
     </section>
 
-    <!-- SKILLS SECTION -->
+    <!-- SKILLS -->
     <section id="skills" class="skills">
         <div class="container">
-            <h3 class="section-title">Technical Skills</h3>
+            <h2 class="section-title">Technical skills</h2>
+            <p class="section-subtitle">Everything listed here I have used to build something that actually runs.</p>
             <div class="skills-grid">
-                
+
                 <div class="skill-category">
-                    <h4>Languages</h4>
+                    <h3>Languages</h3>
                     <ul class="skill-list">
                         <li><span class="skill-badge">Python</span></li>
                         <li><span class="skill-badge">JavaScript</span></li>
-                        <li><span class="skill-badge">HTML5</span></li>
-                        <li><span class="skill-badge">CSS3</span></li>
+                        <li><span class="skill-badge">TypeScript</span></li>
+                        <li><span class="skill-badge">SQL / T-SQL</span></li>
+                        <li><span class="skill-badge">GDScript</span></li>
+                        <li><span class="skill-badge">HTML &amp; CSS</span></li>
                     </ul>
                 </div>
 
                 <div class="skill-category">
-                    <h4>Frameworks & Tools</h4>
+                    <h3>Cloud &amp; Backend</h3>
                     <ul class="skill-list">
-                        <li><span class="skill-badge">Flask</span></li>
-                        <li><span class="skill-badge">SQLite</span></li>
-                        <li><span class="skill-badge">Git & GitHub</span></li>
-                        <li><span class="skill-badge">VS Code</span></li>
+                        <li><span class="skill-badge">AWS Lambda</span></li>
+                        <li><span class="skill-badge">DynamoDB</span></li>
+                        <li><span class="skill-badge">API Gateway</span></li>
+                        <li><span class="skill-badge">Cognito</span></li>
+                        <li><span class="skill-badge">AWS CDK</span></li>
+                        <li><span class="skill-badge">Supabase</span></li>
+                        <li><span class="skill-badge">PostgreSQL</span></li>
+                        <li><span class="skill-badge">REST APIs</span></li>
                     </ul>
                 </div>
 
                 <div class="skill-category">
-                    <h4>Specializations</h4>
+                    <h3>Frontend</h3>
                     <ul class="skill-list">
-                        <li><span class="skill-badge">Database Design</span></li>
-                        <li><span class="skill-badge">Desktop Apps</span></li>
-                        <li><span class="skill-badge">Game Development</span></li>
-                        <li><span class="skill-badge">Full-Stack Web</span></li>
+                        <li><span class="skill-badge">React</span></li>
+                        <li><span class="skill-badge">Tailwind CSS</span></li>
+                        <li><span class="skill-badge">Vite</span></li>
+                        <li><span class="skill-badge">Progressive Web Apps</span></li>
+                        <li><span class="skill-badge">Responsive design</span></li>
                     </ul>
                 </div>
 
                 <div class="skill-category">
-                    <h4>Soft Skills</h4>
+                    <h3>Data &amp; Reporting</h3>
                     <ul class="skill-list">
-                        <li><span class="skill-badge">Problem Solving</span></li>
-                        <li><span class="skill-badge">Project Management</span></li>
-                        <li><span class="skill-badge">Communication</span></li>
-                        <li><span class="skill-badge">Team Leadership</span></li>
+                        <li><span class="skill-badge">Power BI</span></li>
+                        <li><span class="skill-badge">DAX</span></li>
+                        <li><span class="skill-badge">Power Query</span></li>
+                        <li><span class="skill-badge">pandas</span></li>
+                        <li><span class="skill-badge">Advanced Excel</span></li>
+                        <li><span class="skill-badge">SAP</span></li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Practices &amp; Tooling</h3>
+                    <ul class="skill-list">
+                        <li><span class="skill-badge">Git &amp; GitHub</span></li>
+                        <li><span class="skill-badge">GitHub Actions (CI/CD)</span></li>
+                        <li><span class="skill-badge">AI-assisted development</span></li>
+                        <li><span class="skill-badge">Automated testing</span></li>
+                        <li><span class="skill-badge">Infrastructure as code</span></li>
+                        <li><span class="skill-badge">Database design</span></li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Currently learning</h3>
+                    <ul class="skill-list">
+                        <li><span class="skill-badge learning">Automated testing at depth</span></li>
+                        <li><span class="skill-badge learning">TypeScript across the stack</span></li>
+                        <li><span class="skill-badge learning">System design</span></li>
                     </ul>
                 </div>
 
@@ -210,45 +367,117 @@
         </div>
     </section>
 
-    <!-- CONTACT SECTION -->
+    <!-- EXPERIENCE -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience &amp; background</h2>
+            <p class="section-subtitle">
+                Ten years in business systems, data and process automation — the problem domain that pulled me into
+                writing software in the first place.
+            </p>
+
+            <ol class="timeline">
+                <li class="timeline-item">
+                    <div class="timeline-date">Aug 2025 – Jun 2026</div>
+                    <div class="timeline-body">
+                        <h3>Procurement Buyer</h3>
+                        <p class="timeline-org">SKG Properties — Centurion, South Africa</p>
+                        <p>Analyzed purchasing data in SQL and Excel to support buying decisions, and automated
+                           repetitive purchasing workflows that had been running manually.</p>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-date">Nov 2023 – Dec 2024</div>
+                    <div class="timeline-body">
+                        <h3>IT Stock Controller</h3>
+                        <p class="timeline-org">First Technologies — Centurion, South Africa</p>
+                        <p>Built Power BI dashboards and Power Query reports to model and track stock across the
+                           business. Managed and assembled computer hardware.</p>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-date">2015 – 2023</div>
+                    <div class="timeline-body">
+                        <h3>IT Support, Stock Control &amp; IT Procurement</h3>
+                        <p class="timeline-org">Deltrolux · X-Technologies · Barloworld · Salvage Management &amp; Disposals</p>
+                        <p>Eight years across IT support and procurement roles, consistently working with SQL and
+                           Excel analysis, Power Query and Power BI reporting.</p>
+                    </div>
+                </li>
+            </ol>
+
+            <div class="credentials">
+                <div class="cred-block">
+                    <h3>Certifications</h3>
+                    <ul>
+                        <li>Microsoft Certified: Azure Fundamentals <span class="muted">(2023)</span></li>
+                        <li>Microsoft Certified: Azure Data Fundamentals <span class="muted">(2023)</span></li>
+                        <li>Microsoft SQL for Beginners — Udemy <span class="muted">(2022)</span></li>
+                        <li>Power BI — The Practical Guide — Udemy <span class="muted">(2022)</span></li>
+                    </ul>
+                </div>
+                <div class="cred-block">
+                    <h3>Education</h3>
+                    <ul>
+                        <li>National Senior Certificate <span class="muted">(2012)</span><br>
+                            <span class="muted">Rustenburg High School, South Africa</span></li>
+                    </ul>
+                    <p class="cred-note">Everything I know about software, I taught myself — through documentation,
+                       courses, and shipping projects end to end.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
     <section id="contact" class="contact">
         <div class="container">
-            <h3 class="section-title">Get In Touch</h3>
+            <h2 class="section-title">Get in touch</h2>
             <p class="contact-subtitle">
-                Let's build something amazing together. Feel free to reach out!
+                I'm actively looking for a junior developer role and I'm ready to start. If you think I might be a
+                fit, I'd love to hear from you — and I'm happy to walk through any of the projects above in detail.
             </p>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <a href="mailto:vanstadenj94@gmail.com" class="contact-link">
-                        <span class="contact-icon">✉️</span>
-                        <div>
-                            <h5>Email</h5>
-                            <p>vanstadenj94@gmail.com</p>
-                        </div>
-                    </a>
-                    <a href="https://github.com/Goompii" target="_blank" rel="noopener noreferrer" class="contact-link">
-                        <span class="contact-icon">🐙</span>
-                        <div>
-                            <h5>GitHub</h5>
-                            <p>github.com/Goompii</p>
-                        </div>
-                    </a>
-                    <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" class="contact-link">
-                        <span class="contact-icon">💼</span>
-                        <div>
-                            <h5>LinkedIn</h5>
-                            <p>Your Professional Profile</p>
-                        </div>
-                    </a>
-                </div>
+            <div class="contact-info">
+                <a href="mailto:jpvanstaden94@gmail.com" class="contact-link">
+                    <span class="contact-icon">✉</span>
+                    <div>
+                        <h3>Email</h3>
+                        <p>jpvanstaden94@gmail.com</p>
+                    </div>
+                </a>
+                <a href="tel:+17343733252" class="contact-link">
+                    <span class="contact-icon">☎</span>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>+1 (734) 373-3252</p>
+                    </div>
+                </a>
+                <a href="https://github.com/Goompii" target="_blank" rel="noopener noreferrer" class="contact-link">
+                    <span class="contact-icon">◈</span>
+                    <div>
+                        <h3>GitHub</h3>
+                        <p>github.com/Goompii</p>
+                    </div>
+                </a>
+                <a href="assets/files/Jean-Paul-van-Staden-Resume.pdf" class="contact-link" download>
+                    <span class="contact-icon">⤓</span>
+                    <div>
+                        <h3>Résumé</h3>
+                        <p>Download as PDF</p>
+                    </div>
+                </a>
             </div>
+            <p class="contact-footnote">
+                Based in Ann Arbor, Michigan · Authorized to work in the U.S. with no sponsorship required
+            </p>
         </div>
     </section>
 
-    <!-- FOOTER -->
+    </main>
+
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Goompii. All rights reserved.</p>
+            <p>&copy; 2026 Jean-Paul van Staden</p>
         </div>
     </footer>
 

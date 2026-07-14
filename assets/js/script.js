@@ -1,96 +1,84 @@
-// ===== MOBILE MENU TOGGLE =====
-const hamburger = document.querySelector('.hamburger');
-const navMenu = document.querySelector('.nav-menu');
-const navLinks = document.querySelectorAll('.nav-link');
+/* Portfolio — Jean-Paul van Staden */
+(function () {
+    'use strict';
 
-// Toggle menu on hamburger click
-hamburger.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-    hamburger.classList.toggle('active');
-});
+    /* ===== MOBILE MENU ===== */
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
 
-// Close menu when a nav link is clicked
-navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        navMenu.classList.remove('active');
-        hamburger.classList.remove('active');
-    });
-});
+    if (hamburger && navMenu) {
+        const setMenu = (open) => {
+            navMenu.classList.toggle('active', open);
+            hamburger.classList.toggle('active', open);
+            hamburger.setAttribute('aria-expanded', String(open));
+            hamburger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+        };
 
-// ===== SMOOTH SCROLL =====
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
-    });
-});
+        hamburger.addEventListener('click', () => {
+            setMenu(!navMenu.classList.contains('active'));
+        });
 
-// ===== NAVBAR SCROLL EFFECT =====
-const navbar = document.querySelector('.navbar');
-let lastScroll = 0;
+        navMenu.querySelectorAll('a').forEach((link) => {
+            link.addEventListener('click', () => setMenu(false));
+        });
 
-window.addEventListener('scroll', () => {
-    const currentScroll = window.pageYOffset;
-    
-    if (currentScroll > 100) {
-        navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
-    } else {
-        navbar.style.boxShadow = 'none';
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') setMenu(false);
+        });
     }
-    
-    lastScroll = currentScroll;
-});
 
-// ===== FADE IN ON SCROLL =====
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -100px 0px'
-};
+    /* ===== ACTIVE NAV LINK ON SCROLL =====
+       Only in-page anchors participate; the résumé button is skipped. */
+    const anchorLinks = Array.from(
+        document.querySelectorAll('.nav-link[href^="#"]')
+    );
+    const sections = anchorLinks
+        .map((link) => document.querySelector(link.getAttribute('href')))
+        .filter(Boolean);
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('fade-in');
-            observer.unobserve(entry.target);
-        }
-    });
-}, observerOptions);
+    if (sections.length) {
+        const spy = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (!entry.isIntersecting) return;
+                    anchorLinks.forEach((link) => {
+                        link.classList.toggle(
+                            'active',
+                            link.getAttribute('href') === '#' + entry.target.id
+                        );
+                    });
+                });
+            },
+            { rootMargin: '-40% 0px -55% 0px' }
+        );
+        sections.forEach((section) => spy.observe(section));
+    }
 
-// Observe all sections and cards
-document.querySelectorAll('section, .project-card').forEach(el => {
-    observer.observe(el);
-});
+    /* ===== REVEAL ON SCROLL =====
+       Opt in only if the visitor hasn't asked for reduced motion, so content
+       is never hidden from someone whose reveal would never fire. */
+    const prefersReducedMotion = window.matchMedia(
+        '(prefers-reduced-motion: reduce)'
+    ).matches;
 
-// ===== ACTIVE NAV LINK ON SCROLL =====
-window.addEventListener('scroll', () => {
-    let current = '';
-    
-    document.querySelectorAll('section').forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-        
-        if (pageYOffset >= sectionTop - 200) {
-            current = section.getAttribute('id');
-        }
-    });
-    
-    navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href').slice(1) === current) {
-            link.classList.add('active');
-        }
-    });
-});
+    const revealTargets = document.querySelectorAll(
+        '.project-card, .skill-category, .timeline-item, .cred-block, .contact-link'
+    );
 
-// ===== PAGE LOAD ANIMATION =====
-window.addEventListener('load', () => {
-    document.body.style.opacity = '1';
-});
+    if (!prefersReducedMotion && 'IntersectionObserver' in window) {
+        revealTargets.forEach((el) => el.classList.add('reveal'));
 
-console.log('Portfolio loaded successfully! 🚀');
+        const reveal = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        reveal.unobserve(entry.target);
+                    }
+                });
+            },
+            { threshold: 0.12, rootMargin: '0px 0px -60px 0px' }
+        );
+        revealTargets.forEach((el) => reveal.observe(el));
+    }
+})();
