@@ -756,6 +756,8 @@ section:nth-of-type(even) { background: var(--bg-alt); }
     width: 42px;
     height: 42px;
     font-size: 19px;
+    font-weight: 700;
+    line-height: 1;
     color: var(--accent);
     background: var(--accent-soft);
     border-radius: 10px;
