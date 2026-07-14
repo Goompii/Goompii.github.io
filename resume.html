@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jean-Paul van Staden — Résumé</title>
+<meta name="robots" content="noindex">
+<style>
+  /* Print-first résumé. Open in a browser, Ctrl/Cmd+P, "Save as PDF".
+     Set margins to Default and turn OFF "Headers and footers". */
+
+  @page { size: letter; margin: 0.5in; }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Calibri', 'Carlito', 'Segoe UI', system-ui, sans-serif;
+    font-size: 10.2pt;
+    line-height: 1.36;
+    color: #1a1a1a;
+    background: #f0f0f0;
+  }
+
+  .page {
+    max-width: 8.5in;
+    min-height: 11in;
+    margin: 24px auto;
+    padding: 0.5in;
+    background: #fff;
+    box-shadow: 0 4px 24px rgba(0,0,0,.12);
+  }
+
+  a { color: #0a58ca; text-decoration: none; }
+
+  /* --- header --- */
+  header { border-bottom: 2px solid #1a1a1a; padding-bottom: 8px; margin-bottom: 12px; }
+  h1 { font-size: 22pt; font-weight: 700; letter-spacing: -0.01em; line-height: 1.1; }
+  .title {
+    font-size: 11pt; font-weight: 600; color: #0a58ca;
+    letter-spacing: 0.12em; text-transform: uppercase; margin: 2px 0 7px;
+  }
+  .contact { font-size: 9.6pt; color: #333; }
+  .contact span { white-space: nowrap; }
+  .sep { color: #aaa; margin: 0 6px; }
+
+  /* --- sections --- */
+  h2 {
+    font-size: 9.6pt; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em;
+    color: #0a58ca; border-bottom: 1px solid #d0d0d0;
+    padding-bottom: 2px; margin: 13px 0 7px;
+  }
+
+  p.summary { text-align: justify; }
+
+  /* --- skills --- */
+  .skill-row { display: flex; gap: 8px; margin-bottom: 4px; }
+  .skill-label { flex: 0 0 1.55in; font-weight: 700; font-size: 9.6pt; }
+  .skill-val { flex: 1; }
+  .skill-note { color: #666; font-style: italic; }
+
+  /* --- entries --- */
+  .entry { margin-bottom: 8px; }
+  .entry:last-child { margin-bottom: 0; }
+  .entry-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+  .entry-title { font-weight: 700; }
+  .entry-title .stack { font-weight: 400; color: #555; }
+  .entry-date { font-size: 9.4pt; color: #555; white-space: nowrap; }
+  .entry-org { font-size: 9.8pt; color: #0a58ca; font-weight: 600; margin-bottom: 2px; }
+
+  ul { list-style: none; margin-top: 2px; }
+  li { position: relative; padding-left: 12px; margin-bottom: 2px; }
+  li::before { content: '•'; position: absolute; left: 2px; color: #0a58ca; }
+
+  .inline-list { color: #333; }
+
+  @media print {
+    body { background: #fff; font-size: 10pt; }
+    .page { margin: 0; padding: 0; box-shadow: none; max-width: none; min-height: 0; }
+    a { color: #0a58ca; }
+    .no-print { display: none !important; }
+  }
+
+  .no-print {
+    max-width: 8.5in; margin: 20px auto 0; padding: 14px 18px;
+    background: #fff8e1; border: 1px solid #ffd54f; border-radius: 8px;
+    font-size: 10pt; color: #5d4200;
+  }
+</style>
+</head>
+<body>
+
+<div class="no-print">
+  <strong>To export:</strong> press <kbd>Ctrl</kbd>+<kbd>P</kbd> → Destination <em>Save as PDF</em> → Margins
+  <em>Default</em> → uncheck <em>Headers and footers</em> → Save. This yellow box won't appear in the PDF.
+</div>
+
+<div class="page">
+
+  <header>
+    <h1>Jean-Paul van Staden</h1>
+    <p class="title">Junior Software Developer</p>
+    <p class="contact">
+      <span>Ann Arbor, MI</span><span class="sep">|</span>
+      <span>+1 (734) 373-3252</span><span class="sep">|</span>
+      <span><a href="mailto:jpvanstaden94@gmail.com">jpvanstaden94@gmail.com</a></span><span class="sep">|</span>
+      <span><a href="https://goompii.github.io">goompii.github.io</a></span><span class="sep">|</span>
+      <span><a href="https://github.com/Goompii">github.com/Goompii</a></span><br>
+      <span><strong>Authorized to work in the U.S. — no visa sponsorship required</strong></span>
+    </p>
+  </header>
+
+  <h2>Profile</h2>
+  <p class="summary">
+    Career-changer with ten years in business systems, structured data and process automation, moving into software
+    development. Applies SQL, Power BI, DAX and Power Query daily in professional work, and has independently
+    designed, built and deployed five complete applications — including a serverless AWS ticketing system and a
+    real-time messaging app now running in production. Builds with AI-assisted tooling and is actively deepening
+    core programming fundamentals. Microsoft Azure certified. Seeking a junior developer role on a team where I can
+    learn from experienced engineers and contribute from day one.
+  </p>
+
+  <h2>Technical Skills</h2>
+  <div class="skill-row">
+    <div class="skill-label">Professional&nbsp;(10&nbsp;yrs)</div>
+    <div class="skill-val">SQL / T-SQL, Power BI, DAX, Power Query, Advanced Excel, SAP, data modeling, process automation</div>
+  </div>
+  <div class="skill-row">
+    <div class="skill-label">Built &amp; shipped with</div>
+    <div class="skill-val">
+      Python, JavaScript, React, PostgreSQL, Supabase, AWS (Lambda, DynamoDB, CDK), Godot / GDScript, Git &amp; GitHub, HTML/CSS
+      <span class="skill-note">— working software delivered on all of these, using AI-assisted development</span>
+    </div>
+  </div>
+  <div class="skill-row">
+    <div class="skill-label">Currently learning</div>
+    <div class="skill-val">Python fundamentals in depth, automated testing, data structures &amp; algorithms</div>
+  </div>
+
+  <h2>Projects</h2>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="entry-title">OrderFlow — Business Process &amp; Ticketing System
+        <span class="stack">· AWS · Python · TypeScript</span></span>
+    </div>
+    <ul>
+      <li>Designed and delivered a ticketing and workflow system for a warehouse and delivery operation, scoping
+          requirements directly with the people who would use it.</li>
+      <li>Serverless AWS architecture: 15 Lambda functions behind an API Gateway with Cognito authentication, and a
+          DynamoDB single-table design with four secondary indexes chosen from the app's real access patterns.</li>
+      <li>Role-based permissions across five roles; the entire stack defined as infrastructure-as-code with AWS CDK,
+          with 54 automated tests running in GitHub Actions on every push.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="entry-title">Xelvo — Real-Time Private Messenger
+        <span class="stack">· React · Supabase · PostgreSQL</span></span>
+    </div>
+    <ul>
+      <li>One-to-one messaging app deployed to production: real-time delivery, typing indicators, read receipts,
+          reactions, media sharing and push notifications.</li>
+      <li>Access control enforced at the database layer with 54 PostgreSQL row-level-security policies, so a user
+          cannot read a conversation they are not part of even if the frontend fails.</li>
+      <li>Ships from a single codebase as both an installable progressive web app and a native Android build.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="entry-title">Snake World — Competitive Game with Global Leaderboards
+        <span class="stack">· Godot · PostgreSQL</span></span>
+    </div>
+    <ul>
+      <li>Arcade game with 40 level combinations, monthly competitive seasons and worldwide leaderboards.</li>
+      <li>Server-authoritative anti-cheat: clients cannot write to the score table at all — submissions pass through
+          a validating stored procedure with per-level plausibility limits and rate limiting.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="entry-title">Couples Budget — Shared Finance Web Application
+        <span class="stack">· Python · PostgreSQL / SQLite</span></span>
+    </div>
+    <ul>
+      <li>Budgeting app for two partners: paired accounts, category budgets, recurring transactions, and Excel/PDF
+          reporting over an eight-table schema.</li>
+      <li>Runs on SQLite locally and PostgreSQL in the cloud from one codebase via a database abstraction layer;
+          bcrypt password hashing and fully parameterized queries throughout.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="entry-title">Deepclaim — Deep-Sea Mining Game
+        <span class="stack">· Godot · GDScript</span></span>
+    </div>
+    <ul>
+      <li>Resource-management game in which every tile, sprite and sound is generated procedurally in code — the
+          game ships with zero image or audio assets.</li>
+      <li>Versioned save system that forward-migrates saves written by older builds; covered by 172 automated test
+          assertions that drive the real game headlessly.</li>
+    </ul>
+  </div>
+
+  <h2>Professional Experience</h2>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="entry-title">Procurement Buyer</span>
+      <span class="entry-date">Aug 2025 – Jun 2026</span>
+    </div>
+    <p class="entry-org">SKG Properties — Centurion, South Africa</p>
+    <ul>
+      <li>Analyzed purchasing data in SQL and Excel to surface insights and support buying decisions.</li>
+      <li>Streamlined and automated repetitive purchasing workflows that had previously been run by hand.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="entry-title">IT Stock Controller</span>
+      <span class="entry-date">Nov 2023 – Dec 2024</span>
+    </div>
+    <p class="entry-org">First Technologies — Centurion, South Africa</p>
+    <ul>
+      <li>Built Power BI dashboards and Power Query reports to model and track stock across the business.</li>
+      <li>Managed and assembled computer hardware.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="entry-title">IT Support, Stock Control &amp; IT Procurement</span>
+      <span class="entry-date">2015 – 2023</span>
+    </div>
+    <p class="entry-org">Deltrolux · X-Technologies · Barloworld · Salvage Management &amp; Disposals</p>
+    <ul>
+      <li>Eight years across IT support, stock control and procurement roles, consistently applying SQL and Excel
+          analysis, Power Query, and Power BI reporting; PC assembly and hardware support.</li>
+    </ul>
+  </div>
+
+  <h2>Certifications &amp; Education</h2>
+  <div class="skill-row">
+    <div class="skill-label">Certifications</div>
+    <div class="skill-val inline-list">
+      Microsoft Certified: Azure Fundamentals (2023) · Microsoft Certified: Azure Data Fundamentals (2023) ·
+      Microsoft SQL for Beginners, Udemy (2022) · Power BI — The Practical Guide, Udemy (2022)
+    </div>
+  </div>
+  <div class="skill-row">
+    <div class="skill-label">Education</div>
+    <div class="skill-val inline-list">
+      National Senior Certificate (2012) — Rustenburg High School, South Africa. Software development is self-taught.
+    </div>
+  </div>
+  <div class="skill-row">
+    <div class="skill-label">Languages</div>
+    <div class="skill-val inline-list">English (full professional, C1) · Afrikaans (native)</div>
+  </div>
+
+</div>
+</body>
+</html>
